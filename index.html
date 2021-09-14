@@ -26,8 +26,52 @@
             <li>segundo</li>
             <li>tercero</li>
         </ul>
+        <br>
+        <section>
+            <form action="#" method="get">
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Digite su nombre" required>
+                
+                <input type="button" value="Enviar">
+                <button type="button" name="btn1">Enviar</button>
+                <input type="reset" value="Resetear">
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        <br>
+        <section>
+            <label for="">horario entrega</label>
+            <input type="checkbox" name="horarios[]" value="1">mañana
+            <input type="checkbox" name="horarios[]" value="2">tarde
+            <input type="checkbox" name="horarios[]" value="3">noche
+        </section>
+        <br>
+        <section>
+            <label for="producto">Producto</label>
+            <select name="productos[]" id="">
+                <option value="-1">--Seleccione--</option>
+                <option value="1">Memoria USB</option>
+                <option value="2">Disco Duro</option>
+                <option value="3">Mouse</option>
+                <option value="3">Pantalla LCD</option>
+            </select>
+        </section>
+        <br>
+        <label for="observaciones">Observaciones</label>
+        <textarea name="observaciones" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="range" name="rango" value="50">
+        <br>
+        <section>
+            <input type="button" value="Enviar">
+            <button type="button" name="btn1">Enviar</button>
+            <input type="reset" value="Resetear">
+            <input type="submit" value="Enviar">
+        </section>
     </main>
     <footer>pie de pagina</footer>
-
+    
 </body>
 </html>
