@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Listado de Compras</title>
+
+    <style>
+        body {
+            background-color: lightgrey;
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            grid-template-rows: 80px 40px 500px 32px;
+            grid-auto-rows: 256px;
+        }
+
+        header {
+            background-color: aqua;
+            grid-column: 1/7;
+        }
+
+        nav {
+            background-color: violet;
+            grid-column: 1/ span 5;
+        }
+
+        aside {
+            background-color: chocolate;
+            grid-column: 1/ 3;
+        }
+
+        main {
+            background-color: lightgreen;
+            grid-column: 3/ span 7;
+        }
+
+        footer {
+            background-color: lightseagreen;
+            grid-column: 1 / span 6;
+        }
+    </style>
+
 </head>
+
 <body>
     <header>
         <nav>menus o iconos</nav>
-        <a href="https://unabedu-my.sharepoint.com/personal/jcardenas642_o365_unab_edu_co/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjcardenas642%5Fo365%5Funab%5Fedu%5Fco%2FDocuments%2FGrabaciones%2FC3%2DG25%2DDESARROLLO%20DE%20SOFTWARE%2D20210901%5F200933%2DGrabaci%C3%B3n%20de%20la%20reuni%C3%B3n%2Emp4&parent=%2Fpersonal%2Fjcardenas642%5Fo365%5Funab%5Fedu%5Fco%2FDocuments%2FGrabaciones&originalPath=aHR0cHM6Ly91bmFiZWR1LW15LnNoYXJlcG9pbnQuY29tLzp2Oi9nL3BlcnNvbmFsL2pjYXJkZW5hczY0Ml9vMzY1X3VuYWJfZWR1X2NvL0VUZzc2NlFLcklOSWhLOXBUNUlfQ3Y4QlpEV0prLXg1RWdMckRiZTlVdEtwZkE%5FcnRpbWU9ZEFjOVBINXkyVWc">
-        <img src="https://www.misiontic2022.gov.co/746/channels-645_logo_mision.png" alt="misionTIC 2022">
+        <a
+            href="https://unabedu-my.sharepoint.com/personal/jcardenas642_o365_unab_edu_co/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjcardenas642%5Fo365%5Funab%5Fedu%5Fco%2FDocuments%2FGrabaciones%2FC3%2DG25%2DDESARROLLO%20DE%20SOFTWARE%2D20210901%5F200933%2DGrabaci%C3%B3n%20de%20la%20reuni%C3%B3n%2Emp4&parent=%2Fpersonal%2Fjcardenas642%5Fo365%5Funab%5Fedu%5Fco%2FDocuments%2FGrabaciones&originalPath=aHR0cHM6Ly91bmFiZWR1LW15LnNoYXJlcG9pbnQuY29tLzp2Oi9nL3BlcnNvbmFsL2pjYXJkZW5hczY0Ml9vMzY1X3VuYWJfZWR1X2NvL0VUZzc2NlFLcklOSWhLOXBUNUlfQ3Y4QlpEV0prLXg1RWdMckRiZTlVdEtwZkE%5FcnRpbWU9ZEFjOVBINXkyVWc">
+            <img src="https://www.misiontic2022.gov.co/746/channels-645_logo_mision.png" alt="misionTIC 2022"
+                style="width: 100px;">
         </a>
     </header>
     <aside>menu lateral</aside>
@@ -35,7 +75,7 @@
                 <input type="date" name="fecha">
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" placeholder="Digite su nombre" required>
-                
+
                 <input type="button" value="Enviar">
                 <button type="button" name="btn1">Enviar</button>
                 <input type="reset" value="Resetear">
@@ -74,6 +114,7 @@
         </section>
     </main>
     <footer>pie de pagina</footer>
-    
+
 </body>
+
 </html>

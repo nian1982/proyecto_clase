@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: lightgrey;
+            display: grid;
+            grid-template-rows: 5rem 2.5rem max-content max-content 2rem;
+            grid-auto-rows: 16rem;
+            height: 100vh;
+        }
+
+        header {
+            background-color: aqua;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            align-items: center;
+            justify-items: center;
+        }
+
+        nav {
+            background-color: violet;
+            grid-column: 1/ span 8;
+        }
+
+        aside {
+            background-color: chocolate;
+            grid-column: 1/ span 2;
+        }
+
+        main {
+            background-color: lightgreen;
+            grid-column: 3/ span 6;
+        }
+
+        footer {
+            background-color: lightseagreen;
+            grid-column: 1 / span 8;
+        }
+
+        @media screen and (min-width: ) {
+            
+        }
+
+        /* body {
+            background-color: lightgrey;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: 5rem 40px 500px 32px;
+        }
+
+        header {
+            background-color: aqua;
+            grid-column: 1/ span 8 ;
+        }
+
+        nav {
+            background-color: violet;
+            grid-column: 1/ span 8;
+        }
+
+        aside {
+            background-color: chocolate;
+            grid-column: 1/ span 2;
+        }
+
+        main {
+            background-color: lightgreen;
+            grid-column: 3/ span 6;
+        }
+
+        footer {
+            background-color: lightseagreen;
+            grid-column: 1 / span 8;
+        } */
+
+    </style>
+</head>
+
+<body>
+    <header>
+        encabezado
+    </header>
+    <nav>
+        navegaciones
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+    </nav>
+    <aside>
+        menu lateral
+    </aside>
+    <main>
+        contenido
+    </main>
+    <footer>
+        pie de pagina
+    </footer>
+</body>
+
+</html>
